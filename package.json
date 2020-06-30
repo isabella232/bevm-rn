@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@dedis/cothority": "^3.4.7",
     "expo": "~38.0.1",
     "expo-status-bar": "^1.0.0",
     "react": "~16.11.0",
