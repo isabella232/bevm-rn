@@ -1,3 +1,5 @@
+import './global';
+
 import {StatusBar} from 'expo-status-bar';
 import React, {Component} from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';

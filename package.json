@@ -1,7 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "rm -rf .expo && expo start",
+    "stop": "pkill -9 -f bevm-rn; pkill -9 -f expo-cli",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
@@ -9,12 +10,18 @@
   },
   "dependencies": {
     "@dedis/cothority": "^3.4.7",
+    "crypto-browserify": "^3.12.0",
     "expo": "~38.0.1",
     "expo-status-bar": "^1.0.0",
+    "node-libs-react-native": "^1.2.0",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.0.tar.gz",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "toml": "^3.0.0",
+    "util": "^0.12.3",
+    "vm-browserify": "^1.1.2",
+    "whatwg-url": "^8.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
